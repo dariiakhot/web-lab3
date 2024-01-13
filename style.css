@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-items: center;
+  gap: 24px;
+  padding-left: 16%;
+  padding-right: 19%;
+  height: 65px;
+}
+
+.logo,
+.logo img {
+  width: 48px;
+  height: 48px;
+}
+
+.collapse {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0;
+  transition: 0.3s;
+  overflow: hidden;
+  text-wrap: nowrap;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 24px;
+  list-style: none;
+  height: 48px;
+}
+
+.nav__link {
+  color: black;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav__link.active,
+.nav__link:hover {
+  color: rgb(83, 83, 233);
+}
+
+.burger {
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 48px;
+  height: 48px;
+  display: none;
+}
+
+.burger img {
+  width: 48px;
+  height: 48px;
+}
+
+section {
+  position: relative;
+  min-height: 1007px;
+  display: block;
+}
+
+div {
+  display: block;
+}
+
+.greycontainer {
+  width: 100% !important;
+  background-color: #e0e5eb;
+  height: 607px;
+}
+
+.group_photo {
+  object-fit: cover;
+  display: block;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  width: 638px;
+  height: 457px;
+  object-position: 44% 0%;
+  background-position: 44% 50%;
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.2);
+  margin: -511px calc(((100% - 1140px) / 2) + 198px) 0 auto;
+}
+
+.girl_photo {
+  object-fit: cover;
+  display: block;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  width: 431px;
+  height: 601px;
+  object-position: 50% 0%;
+  box-shadow: 2px 2px 29px 0 rgba(0, 0, 0, 0.25);
+  margin: -217px auto 0 calc(((100% - 1140px) / 2));
+}
+
+.conatiner2{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  position: relative;
+  min-height: 453px;
+  color: #ffffff;
+  background-color: #478ac9;
+  text-align: left;
+  width: 501px;
+  height: auto;
+  background-image: none;
+  box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.4);
+  margin: -527px calc(((100% - 1140px) / 2)) 0 auto;
+}
+
+h1 {
+  font-size: 3rem;
+  padding: 0;
+}
+
+.container3 {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: flex-start;
+  position: relative;
+  max-width: 100%;
+  padding: 30px;
+}
+
+.text1 {
+  display: table;
+  word-wrap: break-word;
+  position: relative;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+
+.text2 {
+  color: #ffffff !important;
+  word-wrap: break-word;
+  line-height: 2;
+  margin: 20px 0 0;
+  position: relative;
+}
+
+.read {
+  border-color: #ffffff !important;
+  color: #ffffff !important;
+  background-color: transparent !important;
+  cursor: pointer;
+  border-style: solid;
+  border-width: 2px;
+  margin: auto auto 0 0;
+  text-decoration: none;
+  padding: 10px 30px;
+}
+
+
+@media (max-width: 768px) {
+  nav {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .burger {
+    display: initial;
+    order: 1;
+  }
+  .collapse {
+    width: 48px;
+    height: 48px;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background: #ffffff88;
+  }
+  nav ul {
+    flex-direction: column;
+    order: 2;
+  }
+  .collapse:hover {
+    width: auto;
+    height: 280px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+  }
+    section {
+  min-height: 1346px;
+  }
+  
+  .group_photo {
+  width: 490px;
+  height: 405px;
+  margin-top: -550px;
+  margin-right: 50px;
+  }
+  
+  .girl_photo {
+  margin-top: -100px;
+  margin-left: 40px;
+  width: 346px;
+  height: 482px;
+  }
+  
+  .conatiner2 {
+  width: 450px;
+  height: 500px;
+  min-height: 380px;
+  margin-top: -60px;
+  margin-right: 60px;
+  }
+}
+
+footer {
+  display: block;
+  padding: 48px;
+  color: #ffffff;
+  background: #333333;
+  text-align: center;
+}
+
+footer p {
+  color: white;
+  text-align: center;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 18px;
+}
